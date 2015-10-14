@@ -1,5 +1,5 @@
 #!/usr/bin/env/ python
-#Created: 10/13/2015
+#Created: 10/14/2015
 #Location: Notre Dame, Indiana
 
 import random
@@ -16,7 +16,7 @@ player_score = 0
 computer_score = 0
 
 def start():
-	global human 
+	global human
 	print "\n"
 	human = raw_input("Please enter your name: ");
 	print "\n"
@@ -24,13 +24,13 @@ def start():
 	while game():
 		pass
 	scores()
-	
+
 def game():
 	player = move()
 	computer = random.randint(1,3)
 	result(player, computer)
 	return play_again()
-	
+
 def move():
 	while True:
 		print
@@ -43,7 +43,7 @@ def move():
 			pass
 		print "\n"
 		print "Oops! I didn't understand that. Please enter 1, 2, or 3."
-		
+
 def result(player, computer):
 	print "\n"
 	print "1..."
@@ -67,7 +67,7 @@ def result(player, computer):
 			print "\n"
 			print "The computer laughs as you realize you have been defeated."
 			computer_score += 1
-			
+
 def play_again():
 	print "\n"
 	answer = raw_input("Would you like to play again? Y/N?: ")
@@ -76,7 +76,7 @@ def play_again():
 	else:
 		print "\n"
 		print "Thanks for playing :)"
-		
+
 def scores():
 	global player_score, computer_score, human
 	print "\n"
@@ -84,6 +84,6 @@ def scores():
 	print human, player_score
 	print "Computer: ", computer_score
 	print "\n"
-	
+
 if __name__ == '__main__':
 	start()

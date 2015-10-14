@@ -1,5 +1,4 @@
 #!/usr/bin/env/ python
-#Henry Kudzanai Dambanemuya presents: Rock, Paper, Scissors
 #Created: 10/13/2015
 #Location: Notre Dame, Indiana
 
